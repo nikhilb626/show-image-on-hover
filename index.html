@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: adieu;
+        background: #000;
+        color: #fff;
+        min-height: 1000px;
+        padding: 100px;
+        font-weight: 100;
+    }
+    ul li{
+        list-style: none;
+        display: inline-block;
+        width: 100%;
+        padding: 15px 0;
+        margin-top: 15px;
+        font-size: 22px;
+        border-top: 1px solid #fff;
+        transition: all 0.5s;
+        /* height: 100vh; */
+
+
+    }
+    ul li span{
+        float: right;
+        font-size: 14px;
+    }
+    img{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+        opacity: 0;
+        transition: all 0.5s;
+        height: 100%;
+    }
+    ul li:hover img{
+        opacity: 1;
+
+    }
+    ul li:hover{
+        padding: 30px 0;
+    }
+</style>
+<body>
+    <div class="wrap">
+        <ul>
+            <li>image one <span>span one</span>
+            <img src="pbg1.jpg"></li>
+            <li>image two <span>span two</span>
+            <img src="pbg2.jpg"></li>
+            <li>image three <span>span three</span>
+            <img src="pbg3.jpg"></li>
+            <li> image four <span>span four</span>
+            <img src="pbg4.jpg"></li>
+
+        </ul>
+    </div>
+    
+</body>
+</html>
